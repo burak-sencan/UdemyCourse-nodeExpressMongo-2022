@@ -12,7 +12,7 @@ exports.signup = async (req, res, next) => {
   } catch (error) {
     res.status(404).json({
       status: 'fail',
-      message: err,
+      message: error,
     })
   }
 }
